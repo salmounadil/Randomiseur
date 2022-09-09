@@ -10,19 +10,89 @@ grandeDiv.style.flexWrap = 'wrap';
 grandeDiv.style.padding = '15px'
 document.getElementsByTagName('body')[0].style.padding = '300px';
 document.getElementsByTagName('body')[0].style.paddingTop = '50px';
-let nombre = +prompt("Combien d'élèves ?");
-let nom;
-for (let i = 0; i < nombre - 1; i++) {
-    nom = document.createTextNode(`STUDENT ${i + 2}`)
-    console.log(nom.textContent);
-    let element = clone.cloneNode();
-    element.innerHTML = nom.textContent;
-    console.log(element.innerHTML);
+
+let nom1 = document.createTextNode('Adil')
+let nom2 = document.createTextNode('Soulaiman')
+let nom3 = document.createTextNode('Siham')
+let nom4 = document.createTextNode('Anthony')
+let nom5 = document.createTextNode('Gary')
+let nom6 = document.createTextNode('Cyril')
+let nom7 = document.createTextNode('Amandine')
+let nom8 = document.createTextNode('Quentin')
+let nom9 = document.createTextNode('Bastien')
+let nom10 = document.createTextNode('Kylian')
+let nom11 = document.createTextNode('Junior')
+
+    
+    let element1 = clone.cloneNode();
+    let element2 = clone.cloneNode();
+    let element3 = clone.cloneNode();
+    let element4 = clone.cloneNode();
+    let element5 = clone.cloneNode();
+    let element6 = clone.cloneNode();
+    let element7 = clone.cloneNode();
+    let element8 = clone.cloneNode();
+    let element9 = clone.cloneNode();
+    let element10 = clone.cloneNode();
+    let element11 = clone.cloneNode();
+    element1.appendChild(nom1)
+    element2.appendChild(nom2)
+    element3.appendChild(nom3)
+    element4.appendChild(nom4)
+    element5.appendChild(nom5)
+    element6.appendChild(nom6)
+    element7.appendChild(nom7)
+    element8.appendChild(nom8)
+    element9.appendChild(nom9)
+    element10.appendChild(nom10)
+    element11.appendChild(nom11)
+    grandeDiv.appendChild(element1);
+    grandeDiv.appendChild(element2);
+    grandeDiv.appendChild(element3);
+    grandeDiv.appendChild(element4);
+    grandeDiv.appendChild(element5);
+    grandeDiv.appendChild(element6);
+    grandeDiv.appendChild(element7);
+    grandeDiv.appendChild(element8);
+    grandeDiv.appendChild(element9);
+    grandeDiv.appendChild(element10);
+    grandeDiv.appendChild(element11);
+    document.getElementById('clone').remove()
+    
+    
+   
+let deletee = document.getElementsByClassName('delete')[0];
+
+let count = 0;
+let accord ;
 
 
-    grandeDiv.appendChild(element)
-
+deletee.addEventListener('click',()=>{
+if (count == 0) {
+    deletee.style.backgroundColor = 'green';
+    accord = true;
 }
+
+if (count == 1) {
+    deletee.style.backgroundColor = 'red';
+    accord = false;
+    count -=2
+}
+count++
+})
+
+
+document.querySelectorAll('.grandeDiv > div').forEach(element => {
+    element.addEventListener('click',()=>{
+
+        if (accord === true) {
+            element.remove()
+        }
+    })
+});
+
+
+
 
 
 tab = document.querySelectorAll('.grandeDiv > div');

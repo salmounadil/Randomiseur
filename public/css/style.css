@@ -66,6 +66,28 @@ h1{
     font-weight: bold;
     cursor: pointer;
 }
+.mix{
+    height: 40px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    background-color: #881382;
+    color: white;
+    align-items: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+.delete{
+    height: 40px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    background-color: red;
+    color: white;
+    align-items: center;
+    font-weight: bold;
+    cursor: pointer;
+}
 
 .bluff{
     background-color: yellow;
