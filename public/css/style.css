@@ -1,0 +1,78 @@
+body{
+    background-color: lightgrey;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1{
+    text-align: center;
+    margin: 40px auto;
+}
+
+.div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.case{
+    background-color: #891383;
+    color: white;
+    height: 200px;
+    width: 280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    font-size: 150%;
+    border: 3px solid black;
+    cursor: pointer;
+}
+
+
+.eliminer{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 50px auto;
+    
+}
+
+.boutons{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.random{
+    height: 40px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2d8cdf;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+.reload{
+    height: 40px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    background-color: #881382;
+    color: white;
+    align-items: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.bluff{
+    background-color: yellow;
+    color: black;
+}
+
+.choisi{
+    background-color: green;
+    color: white;
+}
